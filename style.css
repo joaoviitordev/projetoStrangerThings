@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Benguiat';
+    src: url("fonte/Benguiat\ Bold.ttf");
+}
+
+h2, h3, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #0c0102;
+    color: white;
+}
+
+button {
+    display: flex;
+    gap: 14px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.850);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: font-size 0.4s, color 0.4s;
+    align-items: center;
+}
+
+button:hover {
+    font-size: 18px;
+    color: white;
+}
+
+/* make the SVG/icon scale with the button's font-size */
+button img.seta {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    transition: width 0.25s ease, transform 0.25s ease;
+}
+
+/* slightly enlarge the arrow on hover to follow the text growth */
+button:hover img.seta {
+    width: 1.125em;
+    color: white;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    padding: 5vw 5vw 0vw 5vw;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.800);
+    position: absolute;
+    z-index: 10;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("imagens/hero.webp");
+    background-position: center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.800);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    .titulo, .text {
+        width: 50%;
+        
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        padding-left: 8vw;
+        padding-bottom: 8.5vw;
+        line-height: 50px;
+
+        h2 {
+            font-size: 1.5vw;
+            font-weight: 400;
+            letter-spacing: 10px;
+            color: rgba(255, 255, 255, 0.800);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            font-size: 4vw;
+            font-family: 'Benguiat', sans-serif;
+            color: white;
+            line-height: 62px;
+            width: 50%;
+        }
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 0vw 12vw 8.5vw 0vw;
+        gap: 24px;
+
+        p {
+            color: rgba(255, 255, 255, 0.900);
+            font-size: 1.5vw;
+            text-align: right;
+            width: 300px;
+            line-height: 32px;
+        }
+    }
+}
+
+
+/* FIM HERO */
+
+/* INÍCIO MEIO  */
+
+.center {
+    width: 100%;
+    height: 100vh;
+    background-image: url("imagens/bg-sec2.webp");
+    background-position: center;
+    background-size: cover;  
+    background-color: #0c0102;
+    color: rgba(255, 255, 255, 0.800);
+    display: flex;
+    flex-direction: column;
+
+    .cidades {
+        width: 100%;
+        height: 100vh;
+
+        .tituloCenter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8vw 12vw 0vw 8vw;
+            font-size: 20px;
+            
+            h2 {
+                font-weight: 400; 
+                color: rgba(255, 255, 255, 0.900);
+            }
+        }
+
+        .cardCidades {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10vw 12vw 10vw 8vw;
+
+            .teste {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                aspect-ratio: 16/9;
+                width: 32%;
+                background-image: url("imagens/card1.webp");
+                background-size: cover;
+                background-position: center;
+                color: rgba(255, 255, 255, 0.900);
+                text-decoration: none;
+                border-radius: 8px;
+                padding: 20px;
+
+                .card {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    align-items: center;
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+    
+                    p {
+                        font-size: 12px;
+                        color: rgba(255, 255, 255, 0.800);
+                    }
+                }
+            }
+
+            .card:nth-child(2) {
+                background-image: url("imagens/card2.webp");
+            }
+
+            .card:nth-child(3) {
+                background-image: url("imagens/card3.webp");
+            }
+        }
+    }
+
+    .comentarios {
+        width: 100%;
+        .logoMarcas {
+            display: flex;
+            justify-content: space-between;
+            padding: 0vw 12vw 0vw 8vw;
+        }
+
+        .depoimentos {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 10vw 12vw 8vw 8vw;
+            gap: 40px;
+            text-align: justify;
+            font-size: 14px;
+        
+            img {
+                padding-bottom: 12px;
+            }
+        }
+    }
+}
+
+.agradecimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 400px;
+
+    h2 {
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.800);
+        font-size: 36px;
+        padding-bottom: 32px;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.800);
+        list-style: none;
+        font-size: 14px;
+        padding: 0vw 12vw 8vw 8vw;
+    }
+}
+
+footer {
+    width: 100%;
+    background-image: url("imagens/bg-footer.webp");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .conteudoFooter {
+        display: flex;
+        width: 100%;
+        padding: 7vw 7vw 0vw 7vw;
+        
+        .tituloFooter {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0.8vw;
+            padding-bottom: 8.5vw;
+            line-height: 50px;
+
+            h2 {
+                font-size: 24px;
+                font-weight: 400;
+                letter-spacing: 10px;
+                color: rgba(255, 255, 255, 0.800);
+                font-family: 'Poppins', sans-serif;
+            }
+
+                h1 {
+                font-size: 60px;
+                font-family: 'Benguiat', sans-serif;
+                color: white;
+                line-height: 62px;
+                width: 50%;
+            }
+        }
+
+        .textoFooter {
+            display: flex;
+            flex: 1;
+            justify-content: end;
+            gap: 6%;
+            padding-top: 56px;
+            padding-right: 74px;
+
+            .social, .parceiro {
+                img {
+                    padding-top: 6px;
+                    padding-left: 6px;
+                }
+            }
+
+            .intitucional {
+                ul {
+                    list-style: none;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .logosFooter {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 2vw 5vw 0vw 5vw;
+    }
+
+    .textoInfinito {
+        width: max-content;
+        display: flex;
+
+        h3 {
+            color: rgb(191, 191, 191);
+            font-size: 12vw;
+            padding-left: 64px;
+            font-family: 'Benguiat', sans-serif;
+            mix-blend-mode: color-dodge;
+            animation: textoInfinito 10s infinite linear;
+        }
+    }
+}
+
+@keyframes textoInfinito {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .hero {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .titulo {
+            height: 50%;
+            width: 100%;
+            padding-top: 120px;
+
+            h2 {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            h1 {
+                padding-right: 14px;
+                width: 100%;
+                line-height: 48px;
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+
+        .text {
+            height: 50%;
+            width: 100%;
+            padding-top: 145px;
+            font-size: 20px;
+            
+            p {
+                text-align: center;
+                font-size: 18px;
+            }
+
+            button {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+}
