@@ -310,7 +310,7 @@ footer {
                 }
             }
 
-            .intitucional {
+            .institucional {
                 ul {
                     list-style: none;
                     font-family: "Poppins", sans-serif;
@@ -349,46 +349,252 @@ footer {
 }
 
 @media (max-width: 600px) {
-    
+    header {
+        font-size: 2.8vw;
+
+        img {
+            height: auto;
+            max-width: 20vw;
+        }
+    }
+
     .hero {
-        width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        .titulo {
-            height: 50%;
-            width: 100%;
-            padding-top: 120px;
 
+        .titulo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            padding-top: 130px;
+            line-height: 24px;
             h2 {
-                font-size: 18px;
-                text-align: center;
+                font-size: 5vw;
             }
 
             h1 {
-                padding-right: 14px;
                 width: 100%;
-                line-height: 48px;
-                font-size: 40px;
+                font-size: 7vw;
                 text-align: center;
             }
         }
 
         .text {
-            height: 50%;
             width: 100%;
-            padding-top: 145px;
-            font-size: 20px;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 16vw 0px 16vw;
             
-            p {
-                text-align: center;
-                font-size: 18px;
+            button {
+                font-size: 3vw;
             }
 
-            button {
+            p {
+                width: 100%;
+                font-size: 4vw;
+                font-weight: 300;
                 text-align: center;
-                font-size: 14px;
+            }
+        }
+    }
+    
+    .center {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        .cidades {
+            display: flex;
+            flex-direction: column;
+            .tituloCenter {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 0;
+                
+                h2 {
+                    font-size: 6vw;
+                    text-align: center;
+                    font-weight: 300;
+                }
+
+                button {
+                    display: none;
+                }
+            }
+
+            .cardCidades {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 12vw 16vw 12vw 16vw;
+
+                .teste {
+                    width: 100%;
+                    padding: 8px;
+                    margin-top: 6vw;
+                }
+            }
+        }
+
+        .comentarios {
+            width: 100%;
+            .logoMarcas {
+                width: 100%;
+                padding: 10vw 6vw 10vw 6vw;
+                img {
+                    height: auto;
+                    max-width: 22vw;
+                }
+            }
+
+            .depoimentos {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 26px;
+                padding: 10vw 6vw 14vw 6vw;
+                text-align: center;
+            }
+        }
+    }
+
+    .agradecimento {
+        width: 100%;
+        height: 70vh;
+        padding: 60vw 6vw 14vw 6vw;
+        display: flex;
+
+        ul {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 36px;
+            padding: 4.4vw 0 0 0;
+            font-size: 12px;
+            animation: textoInfinito2 10s infinite alternate;
+        }
+        
+        li {
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        
+        h2 {
+            font-size: 6vw;
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+
+        .conteudoFooter {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+
+            .tituloFooter {
+                padding-top: 6vw;
+                text-align: center;
+                line-height: 24px;
+                h2 {
+                    font-size: 4vw;
+                }
+                
+                h1 {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 6vw;
+                }
+            }
+
+            .textoFooter {
+                gap: 0;
+                font-size: 2.4vw;
+                padding: 0;
+                padding-bottom: 32px;
+                
+                h3 {
+                    color: rgba(255, 255, 255, 0.850);
+                }
+
+                .social {
+                    padding-right: 24px;
+                    img {
+                        height: auto;
+                        max-width: 6vw;
+                    }
+                }
+
+                .institucional {
+                    padding-left: 24px;
+                }
+                
+                .parceiro {
+                    img {
+                        height: auto;
+                        max-width: 24vw;
+                    }
+                }
+            }
+        }
+
+        .logosFooter {
+            width: 100%;
+            padding: 1vw 5vw 0vw 5vw;
+                img {
+                    height: auto;
+                    max-width: 16vw;
+                }
+        }
+    }
+}
+
+@keyframes textoInfinito2 {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 400px) {
+    .hero {
+        .titulo {
+            h2 {
+                font-size: 4vw;
+            }
+        }
+    }
+    .center {
+        .cidades {
+            .cardCidades {
+                .teste {
+                    .card {
+                        h3 {
+                            font-size: 12px;
+                        }
+
+                        p {
+                            font-size: 10px;
+                            color: white;
+                        }
+                    }
+                }
             }
         }
     }
