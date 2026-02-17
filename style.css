@@ -701,7 +701,7 @@ footer {
             gap: 36px;
             padding: 3.4vw 5vw 4vw 5vw;
             font-size: 12px;
-            animation: textoInfinito2 12s infinite both;
+            animation: textoInfinito2 12s infinite alternate;
         }
 
         li {
@@ -904,3 +904,180 @@ footer {
     }
 }
 
+@media (max-width: 834px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+        .titulo {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            padding-top: 20vw;
+            line-height: 4vw;
+
+            h2 {
+                font-size: 3vw;
+            }
+
+            h1 {
+                width: 100%;
+                text-align: center;
+                font-size: 5vw;
+            }
+        }
+
+        .text {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+
+            p {
+                padding: 0vw 24vw 10vw 24vw;
+                width: 100%;
+                text-align: center;
+                font-size: 2.6vw;
+            }
+
+            button {
+                display: none;
+            }
+        }
+    }
+
+    .center {
+        .cidades {
+            .tituloCenter {
+                margin-top: 4vw;
+                h2 {
+                    font-size: 3vw;
+                }
+            }
+
+            .cardCidades {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 6vw;
+                .teste {
+                    width: 60%;
+                    padding: 1.4vw;
+                    margin-top: 3.6vw;
+                }
+            }
+        }
+
+        .comentarios {
+            .logoMarcas {
+                margin-top: 26vw;
+                padding: 0vw 10vw;
+            }
+
+            .depoimentos {
+                padding: 14vw 10vw 0vw 10vw;
+            }
+        }
+    }
+
+    .agradecimento {
+        height: 52vh;
+        padding: 0;
+        padding-top: 37vw;
+        display: flex;
+        align-items: center;
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 2vw 2vw 0vw 2vw;
+            animation: textoInfinito2 12s infinite alternate;
+            
+            li {
+                white-space: nowrap;
+                flex-shrink: 0;
+                padding-right: 10px;
+            }
+        }
+
+        h2 {
+            text-align: center;
+            width: 100%;
+            font-size: 3vw;
+            padding: 0;
+        }
+    }
+
+    footer {
+        .conteudoFooter {
+            padding: 0 6vw;
+            width: 100%;
+            padding-bottom: 6vw;
+
+            .textoFooter {
+                padding: 0;
+                padding-top: 56px;
+                width: 100%;
+                .social {
+                    img {
+                        height: auto;
+                        max-width: 3.7vw;
+                    }
+                    h3 {
+                        text-align: center;
+                        font-size: 1.8vw;
+                    }
+                }
+
+                .parceiro {
+                    h3 {
+                        font-size: 1.8vw;
+                    }
+
+                    img {
+                        height: auto;
+                        max-width: 16vw;
+                    }
+                }
+
+                .institucional {
+                    h3 {
+                        font-size: 1.8vw;
+                    }
+
+                    ul {
+                        li {
+                            font-size: 1.4vw;
+                        }
+                    }
+                }
+            }
+
+            .tituloFooter {
+                padding: 0;
+                padding-top: 58px;
+                line-height: 24px;
+                width: 36%;
+
+                h2 {
+                    font-size: 1.6vw;
+                }
+
+                h1 {
+                    line-height: 36px;
+                    font-size: 4.6vw;
+                }
+            }
+        }
+
+        .logosFooter {
+            img {
+                height: auto;
+                max-width: 9vw;
+            }
+        }
+    }
+}
