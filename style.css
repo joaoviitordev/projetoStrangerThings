@@ -188,7 +188,7 @@ header {
             width: 100%;
             padding: 10vw 12vw 10vw 8vw;
 
-            .teste {
+            .card {
                 display: flex;
                 justify-content: space-between;
                 align-items: end;
@@ -202,12 +202,6 @@ header {
                 border-radius: 8px;
                 padding: 20px;
 
-                .card {
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                    align-items: center;
-
                     h3 {
                         font-weight: 600;
                         font-size: 16px;
@@ -218,13 +212,12 @@ header {
                         color: rgba(255, 255, 255, 0.800);
                     }
                 }
-            }
 
-            .teste:nth-child(2) {
+            .card:nth-child(2) {
                 background-image: url("imagens/card2.webp");
             }
 
-            .teste:nth-child(3) {
+            .card:nth-child(3) {
                 background-image: url("imagens/card3.webp");
             }
         }
@@ -366,6 +359,213 @@ footer {
 }
 
 @keyframes textoInfinito {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 360px) {
+    button {
+        font-size: 4vw;
+        display: none;
+    }
+
+    .hero {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        
+        .text {
+            padding: 0;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 24vw;
+
+            p {
+                padding: 0 8vw 0 8vw;
+                width: 100%;
+                text-align: center;
+                font-size: 5vw;
+                line-height: 24px;
+            }
+        }
+        
+        .titulo {
+            margin-top: 42vw;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            line-height: 0;
+
+            h2 {
+                letter-spacing: 2.4vw;
+                font-size: 4.6vw;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 7.6vw;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .center {
+        .comentarios {
+            .depoimentos {
+                flex-direction: column;
+                padding: 16vw 8vw 0 8vw;
+
+                img {
+                    height: auto;
+                    max-width: 32vw;
+                }
+            }
+
+            .logoMarcas {
+                padding: 16vw 6vw 0 6vw;
+
+                img {
+                    height: auto;
+                    max-width: 24vw;
+                }
+            }
+        }
+
+        .cidades {
+            padding: 0 8vw 0 8vw;
+
+            .cardCidades {
+                width: 100%;
+                height: 70vh;
+                flex-direction: column;
+                padding: 0;
+                margin-top: 12vw;
+
+                .card {
+                    padding: 8px;
+                    width: 100%;
+
+                    h3 {
+                        font-size: 4vw;
+                    }
+
+                    p {
+                        font-size: 2.8vw;
+                    }
+                }
+            }
+
+            .tituloCenter {
+                padding: 0;
+                h2 {
+                    width: 100%;
+                    font-size: 6.4vw;
+                }
+
+                button {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .agradecimento {
+        height: 20vh;
+        margin-top: 70vh;
+
+        ul {
+            padding: 0;
+            animation: textoInfinito2 12s infinite both;
+            li {
+                white-space: nowrap;
+                flex-shrink: 0;
+                padding-left: 6vw;
+            }
+        }
+
+        h2 {
+            padding: 0 8vw 6vw 8vw;
+            text-align: center;
+            font-size: 6.2vw;
+        }
+    }
+
+    footer {
+        .conteudoFooter {
+            padding: 0;
+            flex-direction: column;
+
+            .textoFooter {
+                padding: 4vw 0 4vw 0;
+                width: 100%;
+                justify-content: center;
+
+                h3 {
+                    font-weight: 500;
+                }
+
+                .social {
+                    font-size: 2.8vw;
+                    text-align: center;
+
+                    img {
+                        height: 6vw;
+                        width: 6vw;
+                        padding: 0;
+                        padding-top: 2px;
+                    }
+                }
+
+                .institucional {
+                    font-size: 2.8vw;
+                }
+
+                .parceiro {
+                    font-size: 2.8vw;
+                    
+                    img {
+                        padding: 0;
+                        padding-top: 2px;
+                        height: auto;
+                        max-width: 24vw;
+                    }
+                }
+            }
+
+            .tituloFooter {
+                padding: 4vw 0 0 0;
+                line-height: 8vw;
+                width: 100%;
+                text-align: center;
+
+                h1 {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 7.6vw;
+                    line-height: normal;
+                }
+
+                h2 {
+                    letter-spacing: 2.4vw;
+                    text-align: center;
+                    font-size: 4.6vw;
+                }
+            }
+        }
+
+        .logosFooter {
+            img {
+                height: auto;
+                max-width: 18vw;
+            }
+        }
+    }
+}
+
+
+@keyframes textoInfinito2 {
     100% {
         transform: translateX(-100%);
     }
