@@ -1,10 +1,6 @@
-import { gsap } from "./node_modules/gsap";  
-import { ScrollTrigger } from "./node_modules/gsap/ScrollTrigger";
-import { ScrollSmoother } from "./node_modules/gsap/ScrollSmoother";
-import { SplitText } from "./node_modules/gsap/SplitText";
-
-gsap.registerPlugin(ScrollTrigger,ScrollSmoother,SplitText);
-// Scroll Suave + Efeito Parallax com Gsap!
+document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(ScrollTrigger,ScrollSmoother,SplitText)
+    // Scroll Suave + Efeito Parallax com Gsap!
 ScrollSmoother.create ({
     smooth: 1.5,
     effects: true
@@ -38,4 +34,6 @@ gsap.from(".card", {
     y: 30,
     filter: "blur(10px)",
     stagger: .3,
+});
+
 });
