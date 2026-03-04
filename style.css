@@ -392,12 +392,26 @@ footer {
     }
 }
 
-@media (max-width: 360px) {
+
+
+
+@keyframes textoInfinito2 {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 440px) { /* antes era 428px */
     button {
         font-size: 4vw;
         display: none;
     }
-
+    .preLoader {
+        svg {
+            width: 50vw;
+            height: auto;
+        }
+    }
     .hero {
         padding: 0;
         display: flex;
@@ -452,7 +466,7 @@ footer {
             }
 
             .logoMarcas {
-                padding: 16vw 6vw 0 6vw;
+                padding: 30vw 6vw 0 6vw;
 
                 img {
                     height: auto;
@@ -474,7 +488,7 @@ footer {
                 .card {
                     padding: 8px;
                     width: 100%;
-
+                    margin: 2.4vw 0;
                     h3 {
                         font-size: 4vw;
                     }
@@ -501,7 +515,7 @@ footer {
 
     .agradecimento {
         height: 20vh;
-        margin-top: 70vh;
+        margin-top: 165vw;
 
         ul {
             padding: 0;
@@ -590,15 +604,9 @@ footer {
             }
         }
     }
+
+    
 }
 
 
-@keyframes textoInfinito2 {
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-@media (max-width: 768px) {
-
-}
+/* 440 x 956*/
