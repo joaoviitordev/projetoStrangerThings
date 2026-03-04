@@ -152,7 +152,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: end;
-        padding: 0vw 12vw 8.5vw 0vw;
+        padding: 0vw 8vw 8.5vw 0vw;
         gap: 24px;
 
         p {
@@ -199,7 +199,7 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 8vw 12vw 0vw 8vw;
+            padding: 8vw 8vw 0vw 8vw;
             font-size: 20px;
             
             h2 {
@@ -212,7 +212,7 @@ header {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            padding: 10vw 12vw 10vw 8vw;
+            padding: 6vw 8vw 10vw 8vw;
 
             .card {
                 display: flex;
@@ -254,14 +254,14 @@ header {
         .logoMarcas {
             display: flex;
             justify-content: space-between;
-            padding: 0vw 12vw 0vw 8vw;
+            padding: 0vw 8vw 0vw 8vw;
         }
 
         .depoimentos {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            padding: 10vw 12vw 8vw 8vw;
+            padding: 12vw 8vw 8vw 8vw;
             gap: 40px;
             text-align: justify;
             font-size: 14px;
@@ -297,7 +297,7 @@ header {
         color: rgba(255, 255, 255, 0.800);
         list-style: none;
         font-size: 14px;
-        padding: 0vw 12vw 8vw 8vw;
+        padding: 0vw 8vw 8vw 8vw;
     }
 }
 
@@ -313,7 +313,7 @@ footer {
     .conteudoFooter {
         display: flex;
         width: 100%;
-        padding: 7vw 7vw 0vw 7vw;
+        padding: 7vw 6vw 0vw 6vw;
         
         .tituloFooter {
             display: flex;
@@ -323,7 +323,7 @@ footer {
             line-height: 50px;
 
             h2 {
-                font-size: 24px;
+                font-size: 1.5vw;
                 font-weight: 400;
                 letter-spacing: 10px;
                 color: rgba(255, 255, 255, 0.800);
@@ -331,7 +331,7 @@ footer {
             }
 
                 h1 {
-                font-size: 60px;
+                font-size: 4vw;
                 font-family: 'Benguiat', sans-serif;
                 color: white;
                 line-height: 62px;
@@ -344,8 +344,8 @@ footer {
             flex: 1;
             justify-content: end;
             gap: 6%;
-            padding-top: 56px;
-            padding-right: 74px;
+            padding-top: 3vw;
+            padding-right: 3vw;
 
             .social, .parceiro {
                 img {
