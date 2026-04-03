@@ -7,6 +7,11 @@ Este projeto consiste em uma **Landing Page inspirada no site oficial da série 
 O desenvolvimento teve início a partir de um **protótipo criado no Figma**, garantindo melhor organização visual, definição de componentes e experiência do usuário antes da implementação.
 
 ---
+## 🔗 Acesse o Projeto
+O portfólio está publicado e pode ser visualizado no link abaixo:
+* 👉 **https://joaoviitordev.github.io/Landing-Page-StrangerThings/src/pages/index.html**
+
+---
 
 ## 🎨 Design e Experiência do Usuário (UI/UX)
 
